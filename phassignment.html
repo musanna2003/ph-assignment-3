@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                base: '#FFF9F4',
+                mbase: '#F9DF8A',
+              }
+            }
+          }
+        }
+        
+      </script> 
+      <style>
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(80vh);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        .animate-fade-in-up {
+          animation: fadeInUp 2s ease-in-out forwards;
+        }
+      </style>
+    <title>Document</title>
+    <style>
+        .sora {
+          font-family: "Sora", serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+        }
+        .adlam {
+          font-family: "ADLaM Display", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="bg-base text-black">
+      <div class="lg:w-[1320px] mx-auto flex justify-between items-center py-4 px-4 lg:px-0 ">
+        <!-- left side -->
+        <div class="flex items-center gap-1">
+          <img src="asset-a3/logo-header.png" alt="" class="w-10 h-10">
+              <h2 class="lg:block md:block hidden sora text-[26px] text-black">Browse<span class=" text-yellow-300">4</span>Pets</h2>
+        </div>
+      <!-- right main -->
+      <div class=" gap-20 items-center flex ">
+          <!-- right left -->
+          <div class="gap-7 hidden lg:flex sora text-[20px] text-black">
+              <p>Find a pet</p>
+              <p>Breeds</p>
+              <p>Contact us</p>
+          </div>
+          <!-- left left -->
+          <div class=" gap-5 items-center hidden md:flex lg:flex">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>                    
+              <button class=" sora text-[20px] btn border-2 border-yellow-400 bg-base text-black hover:bg-yellow-200">Login</button>
+              <button class=" sora text-[20px] btn border-0 bg-yellow-400 text-black hover:bg-transparent ">Register</button>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+      </div>
+      </div>
+        
+    </nav>
+    <div class=" animate-fade-in-up flex flex-col mx-auto lg:relative lg:w-[1320px] px-4 lg:px-0 my-[70px]">
+        <div class=" mx-auto flex flex-col justify-between items-start gap-2 lg:absolute  ">
+            <h1 class="adlam text-[56px] lg:w-[680px] text-black">Pamper Your Pet, Because They Deserve the Bes</h1>
+            <p class="sora text-[20px] lg:w-[670px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class=" btn border-0 bg-yellow-400 text-black ">Find a pet</button>
+        </div>
+        <img src="asset-a3/cat-big.png" alt="" class="">
+    </div>
+    <!-- card section -->
+    <div class="mx-auto lg:w-[1320px] md:w-[660px] w-[440px] my-[70px]">
+      <h1 class="adlam text-[36px] text-black">Browse By Categories</h1>
+      <!-- card parent -->
+      <div class="  text-black grid grid-cols-2 lg:grid-cols-6 md:grid-cols-3 gap-6 ">
+        <div class=" w-52 h-64 flex flex-col justify-evenly items-center bg-mbase rounded-md">
+          <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center"><img src="asset-a3/dog-cartoon.png" alt="" class="h-8 w-8 "> </div>
+          
+          <h2 class="adlam text-[20px] text-black">Dog</h2>
+          <p class="sora text-[20px] text-black">3 items</p>
+        </div>
+        <div class=" w-52 h-64 flex flex-col justify-evenly items-center bg-mbase rounded-md">
+          <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center"><img src="asset-a3/dog-cartoon.png" alt="" class="h-8 w-8 "> </div>
+          
+          <h2 class="adlam text-[20px] text-black">Dog</h2>
+          <p class="sora text-[20px] text-black">3 items</p>
+        </div>
+        <div class=" w-52 h-64 flex flex-col justify-evenly items-center bg-mbase rounded-md">
+          <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center"><img src="asset-a3/dog-cartoon.png" alt="" class="h-8 w-8 "> </div>
+          
+          <h2 class="adlam text-[20px] text-black">Dog</h2>
+          <p class="sora text-[20px] text-black">3 items</p>
+        </div>
+        <div class=" w-52 h-64 flex flex-col justify-evenly items-center bg-mbase rounded-md">
+          <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center"><img src="asset-a3/dog-cartoon.png" alt="" class="h-8 w-8 "> </div>
+          
+          <h2 class="adlam text-[20px] text-black">Dog</h2>
+          <p class="sora text-[20px] text-black">3 items</p>
+        </div>
+        <div class=" w-52 h-64 flex flex-col justify-evenly items-center bg-mbase rounded-md">
+          <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center"><img src="asset-a3/dog-cartoon.png" alt="" class="h-8 w-8 "> </div>
+          
+          <h2 class="adlam text-[20px] text-black">Dog</h2>
+          <p class="sora text-[20px] text-black">3 items</p>
+        </div>
+        <div class=" w-52 h-64 flex flex-col justify-evenly items-center bg-mbase rounded-md">
+          <div class="bg-white rounded-full w-28 h-28 flex justify-center items-center"><img src="asset-a3/dog-cartoon.png" alt="" class="h-8 w-8 "> </div>
+          
+          <h2 class="adlam text-[20px] text-black">Dog</h2>
+          <p class="sora text-[20px] text-black">3 items</p>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 3rd section -->
+  <div class=" lg:bg-base lg:h-[775px] w-full flex justify-center items-center my-[70px]">
+    <!-- main -->
+    <div class="lg:w-[1320px] mx-auto flex flex-col justify-around sm:items-center gap-12">
+      <h1 class="adlam text-[36px] text-black">Trending Pet Products</h1>
+      <!-- cards parent -->
+      <div class="lg:h-[402] lg:w-[1320px] flex flex-col sm:justify-center sm:items-center lg:flex-row gap-6">
+        <!-- big card -->
+        <div class="relative bg-mbase w-[424px] h-[402px] rounded-lg ">
+          <!-- text -->
+          <div class=" w-[404px] py-10 px-7 flex flex-col items-start gap-3">
+            <h1 class="adlam text-[32px] text-black">T- Shirts For Dogs</h1>
+            <p class="sora text-[16px] text-black">Discover a world of treats, toys and<br> essential hand picked for</p>
+            <button class="btn bg-white border-0 sora text-[16px] text-black hover:bg-slate-400">shop now</button>
+          </div>
+          <img src="asset-a3/cute-pet-small.png" alt="" class=" absolute bottom-0 right-0">
+        </div>
+        <!-- sub cards parent -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 border-slate-500">
+          <!-- sub cards -->
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+          <div class="bg-white md:flex justify-evenly items-center h-[118px] w-[275px] rounded-xl border-2  border-slate-100 sm:hidden lg:flex">
+            <div class="h-[86px] w-[86px] bg-base rounded-2xl flex justify-center items-center">
+              <img src="asset-a3/dog-cartoon.png" alt="" class="h-[48px] w-[48px]">
+            </div>
+            <div class="">
+              <h2 class="flex sora text-[20px] text-black "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-yellow-300 text-yellow-300 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              4.5</h2>
+              <h2 class="sora text-[20px] text-black font-medium">Pet Bed</h2>
+              <h2 class="sora text-[16px] text-black font-medium">$39.99</h2>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>   
+  </div>
+  <!-- 4th section -->
+  <div class="mx-auto lg:w-[1320px] flex flex-col lg:items-start md:items-start items-center gap-[48px] my-[70px]">
+    <h1 class="adlam text-[36px] text-black">Everyday low Price</h1>
+    <!-- parent banar -->
+    <div class=" flex gap-8 flex-col lg:flex-row">
+      <!-- banar 1 -->
+      <div class=" hidden lg:flex md:flex justify-around items-center w-[784px] h-[480px] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg">
+        <div class="">
+          <p class="sora text-[20px] text-black">Under Price</p>
+          <h3 class=" adlam text-[32px] text-black">Pet Grooming Mitt</h3>
+          <h2 class=" adlam text-[24px] text-white">(Easy Hair Removal)</h2>
+          <h1 class="adlam text-[56px] text-black">$7.99</h1>
+        </div>
+        <img src="asset-a3/cute-dog-mid.png" alt="" class=" h-[480px] w-[383px]">
+      </div>
+      <!-- banar 1 small -->
+      <div class=" lg:hidden md:hidden relative w-[512px] h-[480px] bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] rounded-lg">
+        <!-- text -->
+        <div class=" w-[404px] py-10 px-7 flex flex-col items-start gap-3">
+          <h1 class="adlam text-[32px] text-black">T- Shirts For Dogs</h1>
+          <h1 class="adlam text-[56px] text-white">$7.99</h1>
+        </div>
+        <img src="asset-a3/cute-dog-mid.png" alt="" class=" absolute bottom-0 right-0 h-[390px] w-[312px]">
+      </div>
+      <!-- banar 2 -->
+      <div class="relative w-[512px] h-[480px] bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] rounded-lg">
+        <!-- text -->
+        <div class=" w-[404px] py-10 px-7 flex flex-col items-start gap-3">
+          <h1 class="adlam text-[32px] text-black">T- Shirts For Dogs</h1>
+          <h1 class="adlam text-[56px] text-yellow-400">$7.99</h1>
+        </div>
+        <img src="asset-a3/cute-pet-mid.png" alt="" class=" absolute bottom-0 right-0">
+      </div>
+    </div>
+  </div>
+  <!-- extra -->
+  
+  <div class="lg:w-[1320px] px-10 flex flex-col mx-auto text-black">
+    <h1 class="adlam text-black text-[64px] py-10">FAQ</h1>
+    <div class="collapse bg-white border-2 border-slate-100">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title text-xl adlam font-medium">Q1: What is the best food for my pet's health?</div>
+      <div class="collapse-content">
+        <p>A: The best food for your pet depends on their breed, size, and dietary needs. For dogs, high-quality kibble with real meat as the first ingredient is ideal. Cats thrive on a diet rich in animal proteins. We also offer specialized foods for senior pets, puppies, and pets with allergies or health concerns.
+        </p>
+      </div>
+    </div>
+    <div class="collapse bg-white border-2 border-slate-100">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title text-xl adlam font-medium">Q2: How often should I groom my pet?</div>
+      <div class="collapse-content">
+        <p>A: Grooming needs vary based on the type of pet and their coat. Dogs with long fur may need grooming every 4-6 weeks, while short-haired breeds can go longer between sessions. Cats usually groom themselves but benefit from occasional brushing. Don’t forget regular nail trimming and ear cleaning!</p>
+      </div>
+    </div>
+    <div class="collapse  bg-white border-2 border-slate-100">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title text-xl adlam font-medium">Q3: Do you offer veterinary services or health advice?</div>
+      <div class="collapse-content">
+        <p>A: Yes, we have certified vets available for health consultations and vaccinations. Whether your pet needs a regular check-up or urgent care, our friendly veterinary staff is here to help.</p>
+      </div>
+    </div>
+  </div>
+  <!-- last -->
+<div class=" lg:h-[654px] h-[772px] w-auto relative flex flex-col justify-between items-center bg-mbase mt-[400px]" >
+    <!-- login -->
+    <div class=" text-center p-7 bg-base lg:w-[1320px] lg:h-[491px] flex flex-col lg:flex-row justify-evenly items-center rounded-xl absolute -top-[3%] -translate-y-1/2">
+      <img src="asset-a3/cute-pet-mid.png" alt="">
+      <div class=" flex flex-col gap-4">
+        <h1 class=" adlam text-[36px] text-black">Get Pawsome News!</h1>
+        <p class="sora text-[20px] text-[black]">Exclusive training tips, ticks, product deals and more.</p>
+        <input type="text" placeholder="Enter email...." class=" sora text-[16px] h-[68px] w-[472px] bg-white rounded-lg px-3">
+        <button class=" btn bg-yellow-400 text-black text-[20px] sora border-0 w-[164px]">Subscribe</button>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="flex flex-col w-[550px] lg:flex-row absolute top-[22%] translate-y-1/2 lg:justify-between lg:items-center lg:w-[1320px] lg:h-[330px] gap-7">
+      <div class="flex flex-col gap-10">
+        <div class="flex items-center gap-1">
+          <img src="asset-a3/logo-footer.png" alt="" class="w-10 h-10">
+              <h2 class=" sora text-[26px] text-black">Browse<span class=" text-yellow-300">4</span>Pets</h2>
+        </div>
+        <p class=" sora text-black" text-[20px]>Discover a world of treats, toys, and<br> essentials handpicked for your furry friends</p>
+      </div>
+      <div class=" flex flex-col gap-6 sora text-[20px] text-black">
+        <p>Find a pet</p>
+        <p>Breeds</p>
+        <p>Contact us</p>
+    </div>
+      <div class="">
+        <p class="sora text-[20px] text-black">Follow us</p>
+        <div class="flex gap-4">
+          <img src="asset-a3/icons8-facebook-logo-60.png" alt="" class=" w-[30px] h-[30px]">
+          <img src="asset-a3/icons8-instagram-96.png" alt="" class=" w-[30px] h-[30px]">
+          <img src="asset-a3/icons8-youtube-100.png" alt="" class=" w-[30px] h-[30px]">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
